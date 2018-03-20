@@ -15,7 +15,7 @@ $(document).ready(function() {
        var country = data.sys.country;
        var tempK = data.main.temp;
        var condition = data.weather[0].main;
-       var tempC = tempK - 273.15;
+       var tempC = Math.floor(tempK - 273.15);
        var tempF = tempC * (9 / 5) + 32;
        var dayNight = data.weather[0].icon[2];
        var temper = 0;
