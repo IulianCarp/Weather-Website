@@ -1,0 +1,63 @@
+body , html {
+  min-height: 100%;
+}
+
+body {
+  background: #ccc;
+	background-position: center;
+	background-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 4vw;
+}
+
+#temperature {
+  color: #000080;
+  text-decoration: underline;
+}
+
+#main {
+  padding: 3%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  font-size: 3vw;
+  background-color: #f3f3f3;
+  height: 30%;
+  width: 30%;
+  margin: 15% 35% 55% 35%;
+  align: center;
+}
+
+#design {
+  text-align: center;
+  padding: 2%;
+}
+
+img {
+  width: 25%;
+  height: auto;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
